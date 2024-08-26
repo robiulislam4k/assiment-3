@@ -42,7 +42,7 @@
                             <div class="navbar bg-base-100">
                                 <div class="navbar-start ml-20">
                                   <div class="dropdown">
-                                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <!-- <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         class="h-5 w-5"
@@ -55,10 +55,23 @@
                                           stroke-width="2"
                                           d="M4 6h16M4 12h8m-8 6h16" />
                                       </svg>
-                                    </div>
+                                    </div> -->
+                                     <button class="p-2 md:hidden menu" oneclick="handlemanu()">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        class="inline-block h-5 w-5 stroke-current">
+                                        <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M4 6h16M4 12h16M4 18h16"></path>
+                                      </svg>
+                                    </button> 
                                     <ul
                                       tabindex="0"
-                                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                                      class="menu  menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  ml-10 ">
                                      <li><a class="font-bold text-black">Home</a></li>
                                       <li><a>Service</a></li>
                                       <li><a>Protfolio</a></li>
@@ -72,7 +85,7 @@
                                    Rinterio</a>
                                 </div>
                                 <div class="navbar-center hidden lg:flex ">
-                                  <ul class="menu menu-horizontal px-1 ">
+                                  <ul class="menu menu-horizontal md:left-auto px-1 ml-10 ">
                                     <li><a class="font-bold text-black" >Home</a></li>
                                     <li><a>Service</a></li>
                                     <li><a>Protfolio</a></li>
@@ -81,15 +94,18 @@
 
                                   </ul>
                                 </div>
-                                <div class="navbar-end ml-80 ">
-                                    <a >  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6  text-black  ">
+
+                               
+
+                                <div class="navbar-end ml-80  ">
+                                    <a >  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6  text-black  w-6 h-6  ">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                                       </svg></a>
                                    
                                 
                                   </div>
-                                  <div class="navbar-end mr-28 flex">
-                                    <a class="">  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6  text-black  rounded-full ">
+                                  <div class="navbar-end mr-28 flex ">
+                                    <a class="">  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6  text-black  rounded-full w-6 h-6  ">
                                         <path stroke-linecap="round" stroke-linejoin="round"  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                                       </svg></a>
                                    
@@ -102,7 +118,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                   </svg></a>
                                 </div>
-                              </div>
+                            </div>
+
                         </nav>
                         <div class="card bg-base-100 w-full  mx-auto mt-12">
                             <figure class="px-10 pt-10">
@@ -116,7 +133,7 @@
                                  a striking appearance</h2>
                               <p>The barn house captivates with its blend of rustic charm and modern  sophistication, featuring weathered wood, sleek metal accents, and large <br>  windows that flood the space with natural light.</p>
                               <div class="card-actions">
-                                <button class="btn bg-view-primary">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-green-200 text-white inline rounded-full">
+                                <button class="btn bg-view-primary">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-green-500 text-white inline rounded-full">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                   </svg></button>
                               </div>
@@ -264,16 +281,57 @@
               <p class="text-[#494949] font-semibold py-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br>
                  featuring weathered wood, sleek metal accents.</p>
             </div>
-
-
-
-
           </div>
-          <div class="grid grid-cols-2">
+          
+         <div class="grid  grid-cols-1 gap-5 px-28 lg:grid-cols-3 md:grid-cols-2">
 
-
-
+          <div class="card lg:card-side w-192	 h-56 border border-1 rounded-lg col-span-2 ">
+            <div>
+              <img class="p-6 w-64 	" src="B10-Assignment-03/assets/img1.png"
+                alt="Album" />
+            </div>
+            <div class="card-body mx-auto ">
+              <h2 class="card-title text-[#494949] font-bold">Commercial</h2>
+              <p>The barn house captivates with its blend of rustic charm <br> and modern. The barn house captivates with its blend of rustic charm <br> and modern .</p>
+              <div class="card-actions ">
+                <button class="font-bold">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="size-6 bg-[#ABEF5F] text-black rounded-full inline">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                </button>
+              </div>
+            </div>
           </div>
+          <div class="border border-1 w-96	h-56 rounded-lg p-6	">
+            <img class="w-80 h-44" src="B10-Assignment-03/assets/img2.png" alt="">
+          </div>
+
+          <div class="border border-1 w-56 rounded-lg p-4	">
+            <img class="w-80 h-44" src="B10-Assignment-03/assets/img3.png" alt="">
+          </div>
+
+
+          <div class="card lg:card-side w-full h-56 border border-1 rounded-lg col-start-0 col-end-3 pl-6">
+            <figure>
+              <img class="p-6 w-64" src="B10-Assignment-03/assets/img4.png"
+                alt="Album" />
+            </figure>
+            <div class="card-body mx-auto">
+              <h2 class="card-title text-[#494949] font-bold">Commercial</h2>
+              <p>The barn house captivates with its blend of <br> rustic charm and modern. </p>
+              <div class="card-actions ">
+                <button class="font-bold">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="size-6 bg-[#ABEF5F] text-black rounded-full inline">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-1 w-56 rounded-lg p-4	ml-40">
+            <img class="w-80 h-44" src="B10-Assignment-03/assets/img5.png" alt="">
+          </div>
+          </div>
+
 
         </section>
 
@@ -281,7 +339,7 @@
           <div class="bg-slate-100">
 
           <div class="text-center pt-24" >
-            <button class=" btn  bg-[#acef5f81]  text-[#494949] "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-black mt-2 ">
+            <button class=" btn  bg-[#acef5f81]  text-[#494949] rounded-3xl "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-black mt-2 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
             </svg>Rinterio News </button>
             <h2 class="font-bold text-3xl text-black py-5">Read Our Articles and News</h2>
@@ -402,11 +460,11 @@
 
         </section>
       
-        <div class="bg-[url('/B10-Assignment-03/assets/bg.jpg')]  w-full h-screen ">
+        <div class="bg-[url('/B10-Assignment-03/assets/bg.jpg')]  w-384  ">
 
 
             <div class="text-center pt-24" >
-              <button class=" btn  bg-[#acef5f81]  text-[#494949] "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-black mt-2 ">
+              <button class=" btn  bg-[#acef5f81]  text-[#494949] rounded-3xl "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-black mt-2 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
               </svg>Let’s Connect </button>
               <h2 class="font-bold text-3xl text-black py-5">Let’s Discuss Next Project</h2>
@@ -452,9 +510,9 @@
   <textarea
    placeholder="Write your message here"
   class="textarea textarea-bordered textarea-xs w-full "></textarea>
- <div class="mt-5">
+ <div class="mt-4">
 
-  <a class="btn bg-[#ABEF5F] text-xl w-full">Send Mail <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-green-300 text-black inline rounded-full">
+  <a class="btn bg-[#ABEF5F] text-xl w-full mb-3">Send Mail <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-green-300 text-black inline rounded-full">
     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
   </svg></a>
  </div>
@@ -474,6 +532,40 @@
 
           
     </main>
+    <footer class="bg-black w-384 mx-auto">
+      <div class="text-center pt-16" >
+      <button class="font-bold text-3xl text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="size-6 bg-[#ABEF5F] text-black inline rounded-full">
+        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+      </svg>
+      Rinterio</button>
+        <p class="text-[#494949] font-semibold py-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br>
+           featuring weathered wood, sleek metal accents.</p>
+      </div>
+       
+      <div class="grid lg:grid-cols-5 md:grid-cols-5 grid-cols-1 mx-auto ml-96">
+      <nav >
+          <ul class="flex gap-28   text-center">
+            <li><a class="text-white">Home</a>
+             <li> <a class="text-white">Service</a></li>
+             <li> <a class="text-white">Protfolio</a></li>
+             <li> <a class="text-white">Blogs</a></li>
+             <li> <a class="text-white">Contact</a></li>
+          </ul>
+        </nav>
+        <nav>
+          </div>
+      <div class="ml-96 pl-80  mx-auto py-10">
+          
+      <button class="btn bg-[#ABEF5F] mb-44 rounded-3xl">Book Consult<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="size-6 inline bg-black rounded-full text-white">
+        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+      </svg>
+      </button>
+      </div>
+
+      
+    </footer>
+
+
     
 </body>
 </html>
